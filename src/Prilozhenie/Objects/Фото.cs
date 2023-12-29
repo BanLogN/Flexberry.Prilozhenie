@@ -29,11 +29,12 @@ namespace IIS.Prilozhenie
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ФотоE", new string[] {
+            "Услуги as \'Услуги\'",
+            "Услуги.Наименование as \'Наименование\'",
+            "Услуги.Цена as \'Цена\'",
             "Количество as \'Количество\'",
             "КачествоБумаги as \'Качество бумаги\'",
-            "ДействияСФото as \'Действия с фото\'",
-            "Услуги as \'Услуги\'",
-            "Услуги.Наименование as \'Наименование\'"}, Hidden=new string[] {
+            "ДействияСФото as \'Действия с фото\'"}, Hidden=new string[] {
             "Услуги.Наименование"})]
     [MasterViewDefineAttribute("ФотоE", "Услуги", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     public class Фото : ICSSoft.STORMNET.DataObject

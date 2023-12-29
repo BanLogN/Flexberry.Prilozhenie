@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-заказ-фото-l',
             caption: i18n.t('forms.application.sitemap.заказ.i-i-s-prilozhenie-заказ-фото-l.caption'),
             title: i18n.t('forms.application.sitemap.заказ.i-i-s-prilozhenie-заказ-фото-l.title'),
-            icon: 'archive',
+            icon: 'list',
             children: null
           }]
         }, {
@@ -34,7 +34,7 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-услуги-l',
             caption: i18n.t('forms.application.sitemap.каталог.i-i-s-prilozhenie-услуги-l.caption'),
             title: i18n.t('forms.application.sitemap.каталог.i-i-s-prilozhenie-услуги-l.title'),
-            icon: 'table',
+            icon: 'book',
             children: null
           }]
         }

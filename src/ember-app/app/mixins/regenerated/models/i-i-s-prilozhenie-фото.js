@@ -50,11 +50,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФотоE', 'i-i-s-prilozhenie-фото', {
-    количество: attr('Количество', { index: 0 }),
-    качествоБумаги: attr('Качество бумаги', { index: 1 }),
-    действияСФото: attr('Действия с фото', { index: 2 }),
     услуги: belongsTo('i-i-s-prilozhenie-услуги', 'Услуги', {
-      наименование: attr('Наименование', { index: 4, hidden: true })
-    }, { index: 3, displayMemberPath: 'наименование' })
+      наименование: attr('Наименование', { index: 1, hidden: true }),
+      цена: attr('Цена', { index: 2 })
+    }, { index: 0, displayMemberPath: 'наименование' }),
+    количество: attr('Количество', { index: 3 }),
+    качествоБумаги: attr('Качество бумаги', { index: 4 }),
+    действияСФото: attr('Действия с фото', { index: 5 })
   });
 };
