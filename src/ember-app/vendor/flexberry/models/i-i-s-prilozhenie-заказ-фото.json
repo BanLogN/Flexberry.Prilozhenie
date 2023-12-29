@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISPrilozhenieЗаказФото",
+  "modelName": "i-i-s-prilozhenie-заказ-фото",
+  "className": "ЗаказФото",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаСоздания",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "способОплаты",
+      "type": "i-i-s-prilozhenie-тип-оплаты",
+      "flexberryType": "ТипОплаты",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "фото",
+      "relatedTo": "i-i-s-prilozhenie-фото",
+      "inverse": "заказФото"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаказФотоE",
+      "modelName": "i-i-s-prilozhenie-заказ-фото",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "способОплаты",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ФотоE",
+          "caption": "Фото",
+          "name": "фото",
+          "relatedTo": "i-i-s-prilozhenie-фото",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаказФотоL",
+      "modelName": "i-i-s-prilozhenie-заказ-фото",
+      "attrs": [
+        {
+          "name": "датаСоздания",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "способОплаты",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

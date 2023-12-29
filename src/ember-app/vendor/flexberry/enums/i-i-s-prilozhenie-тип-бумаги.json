@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Prilozhenie",
+  "className": "ТипБумаги",
+  "enumObjects": {
+    "Глянцевая": "",
+    "Матовая": ""
+  }
+}

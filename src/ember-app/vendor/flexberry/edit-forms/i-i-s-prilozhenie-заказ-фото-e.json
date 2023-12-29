@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "услуги",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Фото.Услуги",
+      "projection": "УслугиL",
+      "detailModelName": "i-i-s-prilozhenie-фото"
+    }
+  ],
+  "external": false,
+  "caption": "Заказ фото",
+  "name": "IISPrilozhenieЗаказФотоE",
+  "className": "ЗаказФотоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-заказ-фото",
+      "modelProjection": "ЗаказФотоE"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+﻿{
+  "applicationCaption": "Prilozhenie",
+  "applicationTitle": "Prilozhenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "заказ",
+      "caption": "Заказ",
+      "title": "Заказ",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-заказ-фото-l",
+          "menuName": null,
+          "caption": "Заказ фото",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "каталог",
+      "caption": "Каталог",
+      "title": "Каталог",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
