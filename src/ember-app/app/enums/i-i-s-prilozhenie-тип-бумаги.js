@@ -1,6 +1,6 @@
 import { createEnum } from 'ember-flexberry-data/utils/enum-functions';
 
 export default createEnum({
-  Глянцевая: '',
-  Матовая: ''
+  Матовая: 'Матовая',
+  Глянцевая: 'Глянцевая'
 });

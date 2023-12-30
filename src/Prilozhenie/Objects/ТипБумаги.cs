@@ -12,6 +12,7 @@ namespace IIS.Prilozhenie
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,14 +29,16 @@ namespace IIS.Prilozhenie
     public enum ТипБумаги
     {
         
-        // *** Start programmer edit section *** (ТипБумаги.Глянцевая CustomAttributes)
-
-        // *** End programmer edit section *** (ТипБумаги.Глянцевая CustomAttributes)
-        Глянцевая,
-        
         // *** Start programmer edit section *** (ТипБумаги.Матовая CustomAttributes)
 
         // *** End programmer edit section *** (ТипБумаги.Матовая CustomAttributes)
+        [Caption("Матовая")]
         Матовая,
+        
+        // *** Start programmer edit section *** (ТипБумаги.Глянцевая CustomAttributes)
+
+        // *** End programmer edit section *** (ТипБумаги.Глянцевая CustomAttributes)
+        [Caption("Глянцевая")]
+        Глянцевая,
     }
 }
